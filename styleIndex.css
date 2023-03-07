@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand&family=Tilt+Prism&display=swap');
+
 *{
     padding:0;
     margin:0;
     border: none;
     text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
 }
 body{
     display:grid;
@@ -16,7 +19,7 @@ body{
 }
 
 header{
-    background-color: #BEA7E5;
+    background-color: black;
     grid-area: header;
     padding: 1.5em;
     justify-content: space-evenly;
@@ -25,16 +28,13 @@ header{
 }
 
 nav{
-    background-color: #BEA7E5;
+    background-color: black;
     color:white;
     grid-area: nav;
     display: flex;  
     justify-content: center;
     flex-direction: column;  
     list-style:none;
-    
-
-
 }
 
 .navigationBar li{
@@ -44,6 +44,8 @@ nav{
     padding-top: 30%;
     padding-bottom:40%;
     text-decoration: none;
+    text-align: center;
+    color:ghostwhite;
 }
 
 nav li:first-child{
@@ -52,7 +54,7 @@ nav li:first-child{
 }
 
 main{
-    background-color: #f8f8ff;
+    background-color: ghostwhite;
     grid-area: main;
     /**border-left: 2px;
     border-left-color: black;
@@ -60,13 +62,13 @@ main{
 }
 
 aside{
-    background-color: #f8f8ff;
+    background-color: ghostwhite;
     grid-area: aside;
     image-orientation: 60deg;
 }
 
 footer{
-    background-color: #d4eac8;
+    background-color: black;
     grid-area: footer;
     height:150%;
 }
@@ -78,7 +80,7 @@ footer{
     border-top-right-radius: 20%;
     border-bottom-right-radius: 20%;
     border-bottom-left-radius: 20%;
-    background-color:rgba(0, 0, 0, 0.644);
+    background-color:black;
     padding: 0.5em;
     font-size: 18pt; 
     border: 10px;
@@ -92,12 +94,20 @@ footer{
     
 }
 
+.moreButton:hover{
+    background-color: rgb(0, 87, 193);
+    margin-top: 5%;
+    color: ghostwhite;
+    margin-left: 30%;
+    font-size: 1.2em;
+}
+
 img{
     padding: 10%;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
     overflow:hidden;
     max-height: 100%;
     max-width: 20em;
@@ -105,6 +115,7 @@ img{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    margin-top: 9em;
 }
 
 h1{
@@ -116,7 +127,7 @@ h1{
     font-family: 'Times New Roman', Times, serif;
     font-weight: 800;
     font-size: 50pt;
-    margin-top: 1.2em;
+    margin-top: 3em;
     margin-bottom: -10px;
     text-align: center;
 }
@@ -126,6 +137,7 @@ h1{
     margin-top: 0.0001%;
     font-size: 1.5em;
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .logo{
@@ -138,6 +150,7 @@ h1{
 
 .footlist a{
     text-decoration: none;
+    color:white;
 }
 
 .footlist{
@@ -151,4 +164,48 @@ h1{
 
 .footlist:first-child{
     margin-left: 2%;
+}
+
+#home:hover{
+    background-color: ghostwhite;
+    color:black;
+    text-decoration:none;
+    font-size: 1.25em;
+}
+
+#portfolio:hover{
+    background-color: ghostwhite;
+    color:black;
+    text-decoration:none;
+    font-size: 1.25em;
+}
+
+#contact:hover{
+    background-color: ghostwhite;
+    color:black;
+    text-decoration:none;
+    font-size: 1.25em;
+}
+
+#work:hover{
+    background-color: ghostwhite;
+    color:black;
+    text-decoration:none;
+    font-size: 1.25em;
+}
+
+#report:hover{
+    background-color: ghostwhite;
+    color:black;
+    text-decoration:none;
+    font-size: 1.25em;
+}
+
+.quote{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40pt;
+    text-align: center;
+    padding:0;
+    margin:0; 
+    color: ghostwhite;  
 }
